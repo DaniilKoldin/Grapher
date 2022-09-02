@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
 project(GRAPHER C)
-add_link_options()
 
 set(CMAKE_C_STANDARD 11)
 
@@ -13,3 +12,5 @@ add_executable(GRAPHER
         src/calc.c
         src/graph.c
         )
+
+target_link_libraries(GRAPHER m)
